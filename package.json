@@ -1,0 +1,23 @@
+{
+  "name": "group-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/KevinFalck/group-node-api#readme",
+  "bugs": {
+    "url": "https://github.com/KevinFalck/group-node-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinFalck/group-node-api.git"
+  },
+  "license": "ISC",
+  "author": "Kevin et Antonin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
