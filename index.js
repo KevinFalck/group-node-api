@@ -5,23 +5,22 @@ const port = 3000;
 app.use(express.json());
 
 let users = [
-    { id: 1, nom: "Alice" },
-    { id: 2, nom: "Bob" }
-    { id: 3, nom: "Charlie" }
+	{ id: 1, nom: "Alice" },
+	{ id: 2, nom: "Bob" },
+	{ id: 3, nom: "Charlie" },
 ];
 
-app.post('/users', (req, res) => {
-    const newUser = req.body;
-    users.push(newUser);
-    res.json(newUser);
+app.post("/users", (req, res) => {
+	const newUser = req.body;
+	users.push(newUser);
+	res.json(newUser);
+});
+
+
+app.get("/users", (req, res) => {
+    res.json(users);
 });
 
 app.listen(port, () => {
-	console.log(`Serveur en écoute sur http://localhost:${port}`);
-});
-
-app.get("/users", (req, res) => {
-	res.send({
-		[user]: ["123", "456", "789"],
-	});
+    console.log(`Serveur en écoute sur http://localhost:${port}`);
 });
